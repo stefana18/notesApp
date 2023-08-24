@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Notes App</h1>
+      <p id="stef">By Stefana Asimionesei</p>
+    </div>
+    <div id="form">
+      <form id="inputForm">
+        <input
+          type="text"
+          name="title"
+          id="new-note-title-input"
+          class="inputText"
+          placeholder="Title"
+          autocomplete="off"
+          required
+          autofocus
+        />
+        <input
+          type="text"
+          name="content"
+          id="new-note-body-input"
+          class="inputText"
+          placeholder="Content"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="button">Create note</button>
+      </form>
+    </div>
+
+    <h3 id="no-notes">No notes found, please add one!</h3>
+
+    <ul id="notes"></ul>
+    <script src="myscripts.js"></script>
+  </body>
+</html>
